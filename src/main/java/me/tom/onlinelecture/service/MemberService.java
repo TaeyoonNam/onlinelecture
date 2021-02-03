@@ -1,7 +1,7 @@
 package me.tom.onlinelecture.service;
 
 import lombok.extern.log4j.Log4j2;
-import me.tom.onlinelecture.domain.Member;
+import me.tom.onlinelecture.entity.Member;
 import me.tom.onlinelecture.repository.MemberRepository;
 import org.springframework.stereotype.Service;
 

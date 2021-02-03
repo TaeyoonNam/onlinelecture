@@ -1,6 +1,6 @@
 package me.tom.onlinelecture.repository;
 
-import me.tom.onlinelecture.domain.Member;
+import me.tom.onlinelecture.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
