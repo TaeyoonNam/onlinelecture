@@ -17,9 +17,5 @@ public class MemberService {
 
   public void saveMemberInfo(Member member) {
     memberRepository.save(member);
-    Member savedMember = memberRepository.findByMemberNo(member.getMemberNo());
-    log.info(savedMember.getEmail());
-    log.info(savedMember.getName());
   }
-
 }
