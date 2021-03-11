@@ -6,6 +6,7 @@ import me.tom.onlinelecture.dto.MemberGrade;
 import me.tom.onlinelecture.dto.MemberStatus;
 import me.tom.onlinelecture.entity.Member;
 import me.tom.onlinelecture.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,6 +24,7 @@ public class MemberController {
 
   private final MemberService memberService;
 
+  @Autowired
   public MemberController(MemberService memberService) {
     this.memberService = memberService;
   }
