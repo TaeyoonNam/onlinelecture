@@ -19,23 +19,31 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+    implementation (
+            'org.springframework.boot:spring-boot-starter-data-jpa',
+            'org.springframework.boot:spring-boot-starter-security',
+            'org.springframework.boot:spring-boot-starter-thymeleaf',
+            'org.springframework.boot:spring-boot-starter-validation',
+            'org.springframework.boot:spring-boot-starter-web',
+            'org.thymeleaf.extras:thymeleaf-extras-springsecurity5',
+            'org.springframework.boot:spring-boot-starter-test',
+            'io.jsonwebtoken:jjwt:0.9.1',
+            'io.springfox:springfox-swagger2:2.6.1',
+            'io.springfox:springfox-swagger-ui:2.6.1'
+    )
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'mysql:mysql-connector-java'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
 //    testImplementation 'com.h2database:h2'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
-    testImplementation 'org.hamcrest:hamcrest:2.2'
-    testImplementation 'org.hamcrest:hamcrest-library:2.2'
+    testImplementation (
+            'org.hamcrest:hamcrest:2.2',
+            'org.hamcrest:hamcrest-library:2.2',
+            'junit:junit:4.12',
+            'org.springframework.security:spring-security-test'
+    )
 }
 
 test {

@@ -28,6 +28,8 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+  jwt:
+    secretKey: jwtTestKey
 
 logging:
   level:
@@ -38,3 +40,8 @@ logging:
           descriptor:
             sql:
               BasicBinder: trace
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
