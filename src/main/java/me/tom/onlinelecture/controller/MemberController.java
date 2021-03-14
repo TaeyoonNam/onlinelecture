@@ -11,6 +11,7 @@ import me.tom.onlinelecture.dto.MemberGrade;
 import me.tom.onlinelecture.dto.MemberStatus;
 import me.tom.onlinelecture.entity.Member;
 import me.tom.onlinelecture.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
