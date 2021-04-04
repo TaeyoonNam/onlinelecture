@@ -26,4 +26,8 @@ public class MemberService {
     return member;
   }
 
+  public Member getMemberInfo(long memNo) {
+    return memberRepository.findByMemberNo(memNo);
+  }
+
 }

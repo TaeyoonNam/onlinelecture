@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import me.tom.onlinelecture.dto.MemberGrade;
 import me.tom.onlinelecture.dto.MemberStatus;
 import org.springframework.security.core.GrantedAuthority;
@@ -30,6 +31,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Entity
 @Getter
 @Builder
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "MEMBER")

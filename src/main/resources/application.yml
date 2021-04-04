@@ -24,7 +24,7 @@ spring:
     generate-ddl: true
     open-in-view: false       #  Open-In-View or Open-Session-In-View이란? 영속성 컨텍스트 트랜잭션 범위를 어디까지 지정할 것인지에 대한 설정이다. 참고(https://gracelove91.tistory.com/100, https://kingbbode.tistory.com/27)
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true

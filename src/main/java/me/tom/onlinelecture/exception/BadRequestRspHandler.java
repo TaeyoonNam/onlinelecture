@@ -7,6 +7,9 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * Lombok을 통해 타입 검증 에러 처리
+ */
 @RestControllerAdvice
 public class BadRequestRspHandler {
 

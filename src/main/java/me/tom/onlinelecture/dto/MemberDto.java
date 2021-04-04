@@ -1,5 +1,7 @@
 package me.tom.onlinelecture.dto;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -7,10 +9,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
 @Builder
 public class MemberDto {
 
@@ -30,5 +34,8 @@ public class MemberDto {
 
   @Pattern(regexp = "^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$", message = "휴대폰 번호를 입력해주시기 바랍니다.")
   private String hp;
+
+  @Enumerated(EnumType.STRING)
+  private MemberGrade memberGrade;
 
 }
